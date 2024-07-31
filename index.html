@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Therapy Chat Bot</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>Therapy Bot</h1>
+    </header>
+    <main>
+        <div id="chat-container">
+            <flowise-fullchatbot></flowise-fullchatbot>
+        </div>
+    </main>
+    <script type="module">
+        import Chatbot from "https://cdn.jsdelivr.net/npm/flowise-embed/dist/web.js"
+        Chatbot.initFull({
+            chatflowid: "77fbeb9a-e2b8-481f-ab6d-896337fab186",
+            apiHost: "http://localhost:3000",
+        })
+    </script>
+</body>
+</html>
